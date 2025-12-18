@@ -19,13 +19,10 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 STATIC_DIR = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
-<<<<<<< HEAD
-=======
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 
->>>>>>> e139c0d27c8a1c77d5f0abf76877e21ae1a2af65
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
@@ -46,11 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
-    'myapp'
-=======
     'myapp',
->>>>>>> e139c0d27c8a1c77d5f0abf76877e21ae1a2af65
 ]
 
 MIDDLEWARE = [
@@ -68,11 +61,7 @@ ROOT_URLCONF = 'itc_lab_03.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-<<<<<<< HEAD
-        'DIRS': [BASE_DIR / 'templates'],  # ← Thêm dòng này
-=======
         'DIRS': [BASE_DIR / 'templates'],
->>>>>>> e139c0d27c8a1c77d5f0abf76877e21ae1a2af65
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
