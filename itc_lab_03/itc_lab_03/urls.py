@@ -18,9 +18,13 @@ from django.contrib import admin
 from django.urls import path
 from myapp import views
 urlpatterns = [
+<<<<<<< HEAD
     path('', views.home, name='home'),
     path('about', views.about, name='about'),
     path('contact', views.contact, name='contact'),
     path('shop', views.shop, name='shop'),
+=======
+    path('', views.index, name='home'),
+>>>>>>> e139c0d27c8a1c77d5f0abf76877e21ae1a2af65
     path('admin/', admin.site.urls),
 ]
