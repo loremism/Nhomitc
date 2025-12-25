@@ -2,7 +2,10 @@ from django.shortcuts import render
 from .models import Products,Category
 # Create your views here
 def home(request):
-    return render(request, 'myapp/index.html')
+    products = Products.objects.all()[:3]
+    return render(request, 'myapp/index.html', {
+        'products': products
+    })
 def contact(request):
     return render(request, 'myapp/contact.html')
 def about(request):
