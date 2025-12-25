@@ -28,36 +28,6 @@
 </div>
 
 <!-- Start Map (fix chính ở đây) -->
-<div id="mapid" style="width: 100%; height: 450px;"></div>  <!-- Tăng height để map to hơn -->
-
-<!-- Thêm Leaflet CSS ở đây nếu base.html chưa có (nên thêm vào base.html cho tất cả trang) -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""/>
-
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
-
-<script>
-    // Fix lỗi cú pháp tọa độ (bỏ số thừa)
-    var mymap = L.map('mapid').setView([-23.013104, -43.394365], 13);
-
-    // Đổi sang OpenStreetMap miễn phí, không cần token Mapbox (tránh lỗi rate limit)
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(mymap);
-
-    // Marker đúng tọa độ
-    L.marker([-23.013104, -43.394365]).addTo(mymap)
-        .bindPopup('<b>Zay Shop</b><br />Our Location.')
-        .openPopup();
-
-    // Tắt zoom bằng chuột cuốn và touch để tránh conflict với scroll trang
-    mymap.scrollWheelZoom.disable();
-    mymap.touchZoom.disable();
-</script>
-<!-- End Map -->
 
 <!-- Start Contact Form -->
 <div class="container py-5">

@@ -16,7 +16,7 @@ def shop(request):
         'products': products,
         'categories': categories,
     }
-    return render(request, 'myapp/shop.html')
-def shop_single(request):
-    return render(request, 'myapp/shop_single.html')
+    return render(request, 'myapp/shop.html', context)
+def shop_detail(request):
+    return render(request, 'myapp/shop_detail.html')
 
